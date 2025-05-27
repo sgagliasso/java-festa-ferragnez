@@ -22,7 +22,7 @@ public class While {
             Boolean eInvitato = false;
             while(!eInvitato && i < listaInvitati.length){
                 //se presente stampare sul terminale "Puoi entrare!" viceversa "Non può entrare!""
-                if(nomeInvitato.equals(listaInvitati[i])){
+                if(nomeInvitato.trim().equalsIgnoreCase(listaInvitati[i])){
                     eInvitato = true;
                     
                 }

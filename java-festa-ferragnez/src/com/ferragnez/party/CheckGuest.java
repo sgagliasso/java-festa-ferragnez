@@ -19,7 +19,7 @@ public class CheckGuest {
         Boolean eInvitato = false;
         for(int i = 0 ; i < listaInvitati.length ; i++){
             //se presente stampare sul terminale "Puoi entrare!" viceversa "Non può entrare!""
-            if(nomeInvitato.equals(listaInvitati[i])){
+            if(nomeInvitato.trim().equalsIgnoreCase(listaInvitati[i])){
                 eInvitato = true;
                 break;
             }
