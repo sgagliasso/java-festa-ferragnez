@@ -17,8 +17,7 @@ public class CheckGuest {
 
         //verificare che la variabile stringa sia contenuta nell' array
         Boolean eInvitato = false;
-        int i = 0;
-        for(i = 0 ; i < listaInvitati.length ; i++){
+        for(int i = 0 ; i < listaInvitati.length ; i++){
             //se presente stampare sul terminale "Puoi entrare!" viceversa "Non può entrare!""
             if(nomeInvitato.equals(listaInvitati[i])){
                 eInvitato = true;

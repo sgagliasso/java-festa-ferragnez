@@ -19,17 +19,22 @@ public class While {
        
         int i = 0;
             //se presente stampare sul terminale "Puoi entrare!" viceversa "Non può entrare!""
-          while (i< listaInvitati.length && !nomeInvitato.equals(listaInvitati[i])){
+            Boolean eInvitato = false;
+            while(!eInvitato && i < listaInvitati.length){
+                //se presente stampare sul terminale "Puoi entrare!" viceversa "Non può entrare!""
+                if(nomeInvitato.equals(listaInvitati[i])){
+                    eInvitato = true;
+                    
+                }
                 i++;
             }
     
-
-        if(i < listaInvitati.length){
-            System.out.println("Puoi entrare!");
-        }else{
-            System.out.println("Non puoi entrare!");
-        }
-       
+            if(eInvitato == true){
+                System.out.println("Puoi entrare!");
+            }else{
+                System.out.println("Non puoi entrare!");
+            }
+            
        
         input.close();
     }
